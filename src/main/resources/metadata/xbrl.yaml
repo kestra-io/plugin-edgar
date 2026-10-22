@@ -1,0 +1,8 @@
+group: io.kestra.plugin.edgar.xbrl
+name: "xbrl"
+title: "SEC EDGAR XBRL"
+description: "Tasks that read companies' XBRL financial data from SEC EDGAR."
+body: "Read every value a company has reported in XBRL, such as revenue, net income or shares outstanding, as flat rows filtered by taxonomy, concept, unit, form and period."
+videos: []
+createdBy: "Kestra Core Team"
+managedBy: "Kestra Core Team"

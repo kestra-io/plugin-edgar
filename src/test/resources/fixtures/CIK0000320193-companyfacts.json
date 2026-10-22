@@ -1,0 +1,188 @@
+{
+ "cik": 320193,
+ "entityName": "Apple Inc.",
+ "facts": {
+  "dei": {
+   "EntityCommonStockSharesOutstanding": {
+    "label": "Entity Common Stock, Shares Outstanding",
+    "description": "Indicate number of shares or other units outstanding of each of registrant's cla",
+    "units": {
+     "shares": [
+      {
+       "end": "2026-04-17",
+       "val": 14687356000,
+       "accn": "0000320193-26-000013",
+       "fy": 2026,
+       "fp": "Q2",
+       "form": "10-Q",
+       "filed": "2026-05-01",
+       "frame": "CY2026Q1I"
+      },
+      {
+       "end": "2026-07-17",
+       "val": 14594180000,
+       "accn": "0000320193-26-000020",
+       "fy": 2026,
+       "fp": "Q3",
+       "form": "10-Q",
+       "filed": "2026-07-31",
+       "frame": "CY2026Q2I"
+      }
+     ]
+    }
+   }
+  },
+  "us-gaap": {
+   "Revenues": {
+    "label": "Revenues",
+    "description": "Amount of revenue recognized from goods sold, services rendered, insurance premi",
+    "units": {
+     "USD": [
+      {
+       "start": "2018-04-01",
+       "end": "2018-06-30",
+       "val": 53265000000,
+       "accn": "0000320193-18-000145",
+       "fy": 2018,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2018-11-05",
+       "frame": "CY2018Q2"
+      },
+      {
+       "start": "2017-10-01",
+       "end": "2018-09-29",
+       "val": 265595000000,
+       "accn": "0000320193-18-000145",
+       "fy": 2018,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2018-11-05",
+       "frame": "CY2018"
+      },
+      {
+       "start": "2018-07-01",
+       "end": "2018-09-29",
+       "val": 62900000000,
+       "accn": "0000320193-18-000145",
+       "fy": 2018,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2018-11-05",
+       "frame": "CY2018Q3"
+      }
+     ]
+    }
+   },
+   "NetIncomeLoss": {
+    "label": "Net Income (Loss) Attributable to Parent",
+    "description": "The portion of profit or loss for the period, net of income taxes, which is attr",
+    "units": {
+     "USD": [
+      {
+       "start": "2006-10-01",
+       "end": "2007-09-29",
+       "val": 3495000000,
+       "accn": "0001193125-10-012091",
+       "fy": 2009,
+       "fp": "FY",
+       "form": "10-K/A",
+       "filed": "2010-01-25",
+       "frame": "CY2007"
+      },
+      {
+       "start": "2023-10-01",
+       "end": "2024-09-28",
+       "val": 93736000000,
+       "accn": "0000320193-24-000123",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2024-11-01"
+      },
+      {
+       "start": "2023-10-01",
+       "end": "2024-09-28",
+       "val": 93736000000,
+       "accn": "0000320193-25-000079",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-10-31",
+       "frame": "CY2024"
+      },
+      {
+       "start": "2024-09-29",
+       "end": "2025-09-27",
+       "val": 112010000000,
+       "accn": "0000320193-25-000079",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-10-31",
+       "frame": "CY2025"
+      }
+     ]
+    }
+   },
+   "EarningsPerShareBasic": {
+    "label": "Earnings Per Share, Basic",
+    "description": "The amount of net income (loss) for the period per each share of common stock or",
+    "units": {
+     "USD/shares": [
+      {
+       "start": "2023-10-01",
+       "end": "2024-09-28",
+       "val": 6.11,
+       "accn": "0000320193-25-000079",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-10-31",
+       "frame": "CY2024"
+      },
+      {
+       "start": "2024-09-29",
+       "end": "2025-09-27",
+       "val": 7.49,
+       "accn": "0000320193-25-000079",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-10-31",
+       "frame": "CY2025"
+      }
+     ]
+    }
+   },
+   "AccountsPayableCurrent": {
+    "label": "Accounts Payable, Current",
+    "description": "Carrying value as of the balance sheet date of liabilities incurred (and for whi",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-03-28",
+       "val": 57349000000,
+       "accn": "0000320193-26-000013",
+       "fy": 2026,
+       "fp": "Q2",
+       "form": "10-Q",
+       "filed": "2026-05-01",
+       "frame": "CY2026Q1I"
+      },
+      {
+       "end": "2026-06-27",
+       "val": 64525000000,
+       "accn": "0000320193-26-000020",
+       "fy": 2026,
+       "fp": "Q3",
+       "form": "10-Q",
+       "filed": "2026-07-31",
+       "frame": "CY2026Q2I"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

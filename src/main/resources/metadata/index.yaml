@@ -1,8 +1,8 @@
 group: io.kestra.plugin.edgar
 name: "edgar"
-title: "EDGAR"
-description: "SEC EDGAR plugin for Kestra"
-body: ""
+title: "SEC EDGAR"
+description: "Read company data and filings from SEC EDGAR, the public database of US company filings."
+body: "Look up companies by ticker, list their filings, download filing documents and read XBRL financial data from SEC EDGAR. SEC needs no API key, but it requires a User-Agent with a name and a contact email, and allows at most 10 requests per second."
 videos: []
 createdBy: "Kestra Core Team"
 managedBy: "Kestra Core Team"

@@ -1,0 +1,8 @@
+group: io.kestra.plugin.edgar.company
+name: "company"
+title: "SEC EDGAR Company"
+description: "Tasks that look up companies on SEC EDGAR."
+body: "Resolve stock tickers to the company's CIK, name and exchange, the identifiers the other EDGAR tasks use."
+videos: []
+createdBy: "Kestra Core Team"
+managedBy: "Kestra Core Team"

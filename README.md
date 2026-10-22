@@ -39,14 +39,25 @@
 
 ## Why
 
-- What user problem does this solve? Teams need a concrete starting point for building and validating new Kestra plugins without recreating the same project scaffolding from scratch.
-- Why would a team adopt this plugin in a workflow? It gives plugin authors a ready-made reference repo they can adapt alongside their own build, test, and publishing workflow.
-- What operational/business outcome does it enable? It shortens plugin delivery time, reduces setup mistakes, and makes internal or partner plugin development more repeatable.
+- What user problem does this solve? Teams that use SEC EDGAR, the public database of US company filings, reimplement the same plumbing in every script: the User-Agent SEC requires, its rate limit, ticker-to-CIK lookups and EDGAR's response formats.
+- Why would a team adopt this plugin in a workflow? It keeps EDGAR steps in the same Kestra flow as the rest of the pipeline, with typed outputs, internal storage for large results and Kestra's retries, instead of custom scripts.
+- What operational/business outcome does it enable? Finance, compliance and data teams can build filing monitors and financial datasets as short flows, and pass filings to AI tasks for summaries or extraction.
 
 ## What
 
 - Provides plugin components under `io.kestra.plugin.edgar`.
-- Includes classes such as `Example`, `Trigger`.
+- Tasks:
+  - `company.Lookup` resolves tickers to the company's CIK, name and exchange.
+  - `filings.List` lists a company's filings, filtered by form type and filing date.
+  - `filings.Download` downloads a filing's primary document and its exhibits, chosen by declared type such as `EX-99.1`.
+  - `xbrl.CompanyFacts` reads a company's XBRL financial data as flat rows, filtered by taxonomy, concept, unit, form and period; large results go to internal storage.
+- Trigger:
+  - `filings.Trigger` starts a flow when watched companies file new filings of the given forms.
+- Shared behaviour: a required `userAgent` (name and contact email, as SEC requires), requests spaced to stay under `maxRequestsPerSecond` (default 5, at most 10), and retries on HTTP 429 and 503.
+
+## SEC requirements
+
+EDGAR needs no account or API key. SEC asks automated tools to send a User-Agent with a name and a contact email, for example `Example Co admin@example.com`, and to stay under 10 requests per second across all tools. See [SEC fair access](https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data).
 
 ## Running Kestra locally with this plugin
 
